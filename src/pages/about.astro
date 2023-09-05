@@ -18,7 +18,7 @@ const goal = 3;
 
 const skillColor = "green";
 const fontWeight = "bold";
-const textCase = "uppercase"
+const textCase = "uppercase";
 ---
 
 <Layout title="About page">
@@ -36,7 +36,7 @@ const textCase = "uppercase"
       back and see how my journey is going!
     </p>
 
-    <hr>
+    <hr />
 
     <p>Here are a few facts about me:</p>
     <ul>
@@ -58,7 +58,7 @@ const textCase = "uppercase"
       {skills.map((skill) => <li class="skill">{skill}</li>)}
     </ul>
 
-    <hr>
+    <hr />
 
     {happy && <p>I am happy to be learning Astro!</p>}
 
@@ -74,7 +74,7 @@ const textCase = "uppercase"
   </main>
 </Layout>
 
-<style define:vars={{skillColor, textCase, fontWeight}}>
+<style define:vars={{ skillColor, textCase, fontWeight }}>
   .skill {
     color: var(--skillColor);
     font-weight: var(--fontWeight);

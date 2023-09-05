@@ -1,0 +1,30 @@
+---
+const platform = "github";
+const username = "withastro";
+
+import Social from "./Social.astro";
+---
+
+<footer class="footer">
+  <p>
+    Learn more about my projects on <a
+      href={`https://www.${platform}.com/${username}`}>{platform}</a
+    >!
+  </p>
+
+  <hr />
+
+  <Social platform="twitter" username="astrodotbuild" />
+  <Social platform="github" username="withastro" />
+  <Social platform="youtube" username="astrodotbuild" />
+</footer>
+
+<style>
+  .footer {
+    margin-top: 35px;
+  }
+
+  .footer p {
+    margin-top: 10px;
+  }
+</style>

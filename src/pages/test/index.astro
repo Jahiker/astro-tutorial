@@ -1,0 +1,13 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { dataPage } from "./test";
+
+import "./test.css";
+---
+
+<Layout title="Test page">
+  <main class="testPage">
+    <h1>{dataPage.postTitle}</h1>
+    <p>{dataPage.postContent}</p>
+  </main>
+</Layout>
